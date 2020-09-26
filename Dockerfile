@@ -1,4 +1,4 @@
-FROM node:latest-alpine
+FROM node:current-alpine
 RUN adduser -D -h /home/container container
 USER container
 ENV USER=container HOME=/home/container
