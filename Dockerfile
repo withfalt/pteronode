@@ -1,2 +1,2 @@
 FROM node:latest
-CMD ["npm", "install", "&&", "node", "."]
+CMD ["npm", "install", "--no-bin-links", "&&", "node", "."]
