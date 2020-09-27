@@ -9,4 +9,5 @@ MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g'
 echo ":/home/container$ ${MODIFIED_STARTUP}"
 
 # Run the Server
+export PKG_CONFIG=/usr/bin/pkgconf
 eval ${MODIFIED_STARTUP}
